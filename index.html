@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Previewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>PDF Previewer</h1>
+            <input type="file" id="pdf-upload" accept="application/pdf">
+            <div id="pdf-preview"></div>
+        </div>
+        <div class="right-section">
+            <h2>Box Coordinates</h2>
+            <pre id="box-coordinates"></pre>
+            <button id="delete-box" style="display:none;">Delete Box</button>
+            <button id="copy-json">Copy JSON</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/interact.js/1.10.11/interact.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
